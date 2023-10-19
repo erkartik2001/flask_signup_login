@@ -1,10 +1,6 @@
 bcrypt
 blinker
-diagnostic-analysis
-diagnostic-common-diagnostics
-diagnostic-updater
 dnspython
-dynamic-reconfigure
 eventlet
 flask
 Flask-Bcrypt
