@@ -13,7 +13,6 @@ itsdangerous
 psycopg2
 PyJWT
 SQLAlchemy
-topic-tools
 typing-extensions
 Werkzeug
 zipp
