@@ -1,52 +1,18 @@
 bcrypt
 blinker
-<<<<<<< HEAD
-diagnostic-analysis
-diagnostic-common-diagnostics
-diagnostic-updater
 dnspython
-dynamic-reconfigure
-=======
-dnspython
->>>>>>> 419487e9d2d6286757145b71762a89adcf181780
 eventlet
 flask
 Flask-Bcrypt
 Flask-JWT-Extended
 Flask-Login
 flask-sqlalchemy
-<<<<<<< HEAD
-gencpp
-geneus
-genlisp
-genmsg
-gennodejs
-genpy
-greenlet
-gunicorn
-image-geometry
-importlib-metadata
-interactive-markers
-itsdangerous
-Jinja2
-packagin
-psycopg2
-PyJWT
-python-qt-binding
-six
-smach
-smach-ros
-smclib
-SQLAlchemy
-topic-tools
-=======
 greenlet
 gunicorn
 itsdangerous
 psycopg2
 PyJWT
 SQLAlchemy
->>>>>>> 419487e9d2d6286757145b71762a89adcf181780
 typing-extensions
 Werkzeug
 zipp
