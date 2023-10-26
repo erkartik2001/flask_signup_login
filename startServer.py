@@ -105,17 +105,21 @@ def register():
 
 @app.route("/api/auth/login",methods=["GET","POST"])
 def login():
-    data = request.get_json()
-    email = data["email"]
-    password = data["password"]
+    try:
+        data = request.get_json()
+        email = data["email"]
+        password = data["password"]
 
-    user = User.query.filter_by(email=email).first()
+        user = User.query.filter_by(email=email).first()
 
-    if user and bcrypt.check_password_hash(user.password, password):
-        access_token = create_access_token(identity=email)
-        return jsonify({"message":"Login successfuly","token":access_token}), 200
+        if user and bcrypt.check_password_hash(user.password, password):
+            access_token = create_access_token(identity=email)
+            return jsonify({"message":"Login successfuly","token":access_token}), 200
+        
+        return jsonify({"message":"Invalid email or password"}), 401
     
-    return jsonify({"message":"Invalid email or password"}), 401
+    except Exception as e:
+        return jsonify({"message":"Login failed","error":str(e)})
 
 
 # protected route
