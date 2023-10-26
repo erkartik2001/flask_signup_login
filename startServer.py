@@ -99,7 +99,7 @@ def register():
         return jsonify({"message": "Registration successful"}), 201
 
     except Exception as e:
-        return jsonify({"message": "Registration failed"}), 500
+        return jsonify({"message": "Registration failed","error":str(e)}), 500
     
 
 
