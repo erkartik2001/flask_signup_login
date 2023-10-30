@@ -11,7 +11,7 @@ app = Flask(__name__)
 bcrypt = Bcrypt(app=app)
 
 #Configuring app for database
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://demo_db_s8s0_user:SEQuQsrWuljq89be522VUKo3an8GRf52@dpg-ckt9jrg168ec73b8l3l0-a.oregon-postgres.render.com/demo_db_s8s0"
+app.config["SQLALCHEMY_DATABASE_URI"] = "your postgres db uri"
 db = SQLAlchemy(app)                    
 
 #initialize JWT 
